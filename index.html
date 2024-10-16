@@ -31,7 +31,7 @@
             color: #333;
             padding: 20px;
         }
- %     form {
+        form {
             background-color: #fff;
             padding: 20px;
             border-radius: 5px;
@@ -41,7 +41,7 @@
             display: block;
             margin-bottom: 5px;
         }
-        input[type="text"] {
+        input[type="text"], input[type="email"], input[type="password"] {
             width: 100%;
             padding: 10px;
             margin-bottom: 15px;
@@ -63,22 +63,20 @@
 </head>
 <body>
 
-    <form action="/action_page.php">
+    <form action="/action_page.php" method="post">
         <label for="correo">Correo Electrónico:</label>
-        <input type="text" id="correo" name="correo" value="">
+        <input type="email" id="correo" name="correo" required>
         
         <label for="contraseña">Contraseña:</label>
-        <input type="text" id="contraseña" name="contraseña" value="">
+        <input type="password" id="contraseña" name="contraseña" required>
         
         <label for="ccontraseña">Confirmar Contraseña:</label>
-        <input type="text" id="ccontraseña" name="ccontraseña" value="">
+        <input type="password" id="ccontraseña" name="ccontraseña" required>
         
         <input type="submit" value="Registrarse">
     </form>
-
 </body>
 </html>
-
 
 </body>
 
